@@ -1,0 +1,84 @@
+$back-home: linear-gradient(135deg, #0f94e0, #697dcc);
+$color: #737373;
+$background-color: #2c8dda;
+$color-text: #f9f9f9;
+
+header>.ui.grid {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+a>h2 {
+  color: $color-text !important;
+}
+
+.ui.button.sign-up-button {
+  background-color: $background-color;
+  color: $color-text;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.8rem 1rem;
+}
+
+.ui.button.sign-up-button:hover {
+  background-color: $background-color;
+  color: $color-text;
+}
+
+.a-login {
+  color: $color !important;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.a-login:hover {
+  text-decoration: underline;
+}
+
+.home-design {
+  background: $back-home;
+  height: calc(100vh - 72.38px);
+  box-shadow: 0px -3px 4px 0 rgba(0,0,0,.08), 0 2px 4px 0 rgba(0,0,0,.12);
+}
+
+.nav-brand {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 0.9rem;
+}
+
+.landing-color-white {
+  color: $color-text;
+  font-size: 3rem;
+}
+
+.ui.huge.button.btn-worker {
+  background-color: #29b978;
+  color: $color-text;
+}
+
+.ui.huge.button.btn-worker:hover {
+  color: $color-text;
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px);
+  -webkit-box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+  box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+  -webkit-box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+  box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+}
+
+.ui.huge.button.btn-employer {
+  background-color: transparent;
+  border: 1px solid $color-text;
+  color: $color-text;
+}
+
+.ui.huge.button.btn-employer:hover {
+  color: $color-text;
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px);
+  -webkit-box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+  box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+  -webkit-box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+  box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+}
