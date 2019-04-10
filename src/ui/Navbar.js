@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom';
 export default class Navbar extends Component {
   render() {
     return (
-      <header>
+      <header className="rep-header">
         <Grid container columns="equal" className="ui-header">
           <Grid.Column  tablet="4" computer="4" only="tablet computer">
             <div className="nav-brand">
               <Link to="/">
-                <span style={{ marginTop: '0.2rem', color: "#737373" }}>Reptability</span>
+                <span style={{ marginTop: '0.2rem', color: "#737373", fontFamily: "'Bree Serif', serif" }}>Reptability</span>
               </Link>
             </div>
           </Grid.Column>
