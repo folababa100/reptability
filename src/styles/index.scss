@@ -61,12 +61,16 @@ a>h2 {
 
 .landing-color-white {
   color: $color-text;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .ui.huge.button.btn-worker {
   background-color: $button-home;
   color: $color-text;
+}
+
+.ui.huge.button {
+  border-radius: 2rem !important;
 }
 
 .ui.huge.button.btn-worker:hover {
@@ -97,12 +101,13 @@ a>h2 {
 
 .signup-card {
   margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .color-grey {
   width: 100vw;
   height: -webkit-fill-available;
-  background: linear-gradient(#f0f0f0, #e8e8e8);
+  background: linear-gradient(#f3f3f3, #fdfdfd);
   margin-top: 1rem;
 }
 
@@ -115,14 +120,19 @@ a>h2 {
 }
 
 .ui.input>input:focus {
-  border-color: #2c8dda !important;
-  box-shadow: 0 0 0 1px #2c8dda !important;
+  border-color: $background-color !important;
+  box-shadow: 0 0 0 1px $background-color !important;
   color: $input-color !important;
 }
 
-.ui.input>input {
+.ui.input.huge>input {
   color: $input-color !important;
   border: 1px solid $input-color !important;
+  border-radius: 2rem !important;
+}
+
+.ui.input.huge>input:focus {
+  border: 1px solid #519ad4 !important;
 }
 
 .ui.horizontal.divider {
@@ -197,6 +207,7 @@ a>h2 {
 .link-to-other {
   display: flex;
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .link-to-other>a:hover {
@@ -246,6 +257,241 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-down {
-  margin-top: 3rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 767px) {
+  .adjust {
+    padding-top: 0.496rem !important;
+    padding-bottom: 0.496rem !important;
+    margin-bottom: 0 !important;
+  }
+
+  .adjust-down {
+    margin-top: -0.3rem !important;
+  }
+}
+
+@media (max-width:400px){
+  .ui.container{
+      margin-left: 0.5em !important;
+      margin-right: 0.5em !important;
+  }
+  .home .second-section h1, .home .third-section h1,.about  .first-section h1, .request .first-section h1,.contact .first-section h1{
+      font-size: 2em !important
+  }
+  .home .first-section h1,.ourclients h1{
+      font-size: 2em !important
+  }
+  .home .first-section{
+  padding: 110px 0px;
+  margin-top:50px;
+  background-position-x: left;
+  min-height: 550px;
+  }
+  .request .first-section, .contact .first-section .content{
+      padding: 100px 0px 50px !important
+  }
+ .contact .first-section .content{
+      padding: 130px 0px !important
+  }
+  .about .first-section .content{
+      padding: 140px 0px 50px !important
+  }
+  .home .second-section, .home .third-section{
+      padding: 50px 0px
+  }
+  .home .xlgicon i{
+      font-size: 3em !important
+  }
+  .fs1-2{
+      font-size: 1.1em;
+  }
+
+  .signin .right-grid{
+      position: relative;
+      padding: 70px 0px
+  }
+  .nav-brand{
+      /* padding-top:10px */
+  }
+  .request .ui.tag.label.label{
+      display: none
+  }
+  .request .stepone .ui.left.icon.right.input{
+      border-right: 1px solid #e6e6e7;
+      width: 100%;
+  }
+  .request .second-section{
+    padding-top: 30px !important;
+
+  }
+  .no-xspad,.ui.container.no-xspad{
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+  }
+  .no-xspadding{
+      padding: 0px !important
+  }
+  .message-box{
+      position: relative;
+      width: 100%;
+      margin-top: 20px
+  }
+  .side-widget{
+      display: none;
+  }
+  .signin input,.profile-card .edit-profile input{
+      padding-left: 5px !important
+  }
+  .signin form h3 {
+      text-align: center
+  }
+  .navmodal{
+      width: 100%;
+      padding: 25px 0px
+  }
+  .modal-links{
+      text-align: center !important;
+  }
+  .navmodal i{
+      float: unset;
+  }
+  .navmodal button{
+      float: unset !important;
+      font-size: 1em !important
+  }
+  .navmodal a{
+      float: unset !important;
+      /* font-size: 0.9em; */
+      display: block;
+  }
+  footer .main-footer{
+     display: none !important
+  }
+  footer div{
+      border-top: unset !important
+  }
+  footer .top-footer{
+      padding-left: 10px!important;
+      padding-right: 10px!important;
+  }
+
+  .hide-xs{
+      display: none
+  }
+  .xnav{
+      background: #fff;
+      
+      }
+  .xnav a,.xnav.fixed a{
+          color: #000 !important
+      }
+    
+  .xnav.fixed .navmodal a,.xnav .navmodal a{
+          color: #f7f7f7 !important
+      }
+  .ourservices .ui.card>.content{
+          padding: 60px 10px !important
+      
+      }
+  .ourservices .first-row{
+          margin-top: unset !important;
+      }
+  .ourservices .xcontainer,.ourclients .xcontainer{
+         padding: 0px 10px !important;
+      }
+  .scroll-top,.bottom-chatbox {
+          right: 10px;
+      }
+
+  .commingsoon{
+      padding: 150px 10px
+  }
+  .epistle{
+      font-size: 1.2em
+  }
+ 
+}
+
+.divi-der {
+  width: 2rem;
+  height: 2rem;
+  line-height: 2;
+  border-radius: 22px;
+  box-shadow: 1px 1px 1px 0px #dadada;
+  background-color: #fff;
+  border: 1px solid whitesmoke;
+}
+
+.card-container {
+  width: 100%;
+  height: 100%;
+}
+
+button.ui.button.employer-choose {
+  border-top-left-radius: 2rem !important;
+  border-bottom-left-radius: 2rem !important;
+}
+
+button.ui.button.worker-choose {
+  border-top-right-radius: 2rem !important;
+  border-bottom-right-radius: 2rem !important;
+}
+
+.btn-choose {
+  background-color: white !important;
+  box-shadow: 1px 1px 2px 0px #8c8c8c !important;
+  border: 1px solid #c3c3c3 !important;
+}
+
+.btn-choose:hover {
+  background-color: $background-color !important;
+  color: $color-text !important;
+  box-shadow: 1px 1px 2px 0px #cacaca !important;
+  border: 1px solid #c5c5c5 !important;
+}
+
+.p-foot {
+  text-align: center;
+  color: #cad6dc;
+  font-weight: 600;
+}
+
+.work-mode-three {
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: 1rem;
+}
+
+.mode-h3 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.a-man {
+  display: block !important;
+  color: #1f2836 !important;
+  margin-top: 0.9rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.a-man:hover {
+  text-decoration: underline;
+}
+
+.caret.right.icon {
+  color: #8bc34a;
+}
+
+.p-footer {
+  text-align: center;
+  color: #3e494e;
+  font-weight: 600;
 }

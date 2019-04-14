@@ -6,28 +6,16 @@ export default class Footer extends Component {
     return (
       <footer>
         <div style={{ backgroundColor: '#607d8b' }}>
-          <Grid>
+          <Grid centered>
             <Grid.Row columns="4" className="footer-down">
-              <Grid.Column width="7">
-
+              <Grid.Column style={{ marginBottom: '0.5rem' }} width="12">
+                <p className="p-foot">2019 Reptability icorporation</p>
               </Grid.Column>
-              <Grid.Column width="3">
-                <p className="mt-4">Lorem ipsum</p>
-                <p className="mt-4">Lorem ipsum</p>
-                <p className="mt-4">Lorem ipsum</p>
-                <p className="mt-4">Lorem ipsum</p>
+              <Grid.Column style={{ marginBottom: '0.5rem' }} width="12">
+                <p className="p-footer">Terms of service</p>
               </Grid.Column>
-              <Grid.Column width="3">
-                <p className="mt-4">Lorem ipsum</p>
-                <p className="mt-4">Lorem ipsum</p>
-                <p className="mt-4">Lorem ipsum</p>
-                <p className="mt-4">Lorem ipsum</p>
-              </Grid.Column>
-              <Grid.Column width="3">
-                <p className="mt-4">Lorem ipsum</p>
-                <p className="mt-4">Lorem ipsum</p>
-                <p className="mt-4">Lorem ipsum</p>
-                <p className="mt-4">Lorem ipsum</p>
+              <Grid.Column style={{ marginBottom: '0.5rem' }} width="12">
+                <p className="p-footer">Privacy policies</p>
               </Grid.Column>
             </Grid.Row>
           </Grid>

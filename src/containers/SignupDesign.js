@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Card, Image, Button, Icon, Divider, Input, Form } from 'semantic-ui-react';
+import { Grid, Card, Image, Button, Icon, Divider, Input, Form, Segment, Responsive } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 
 export default class SignupDesign extends Component {
@@ -15,16 +15,25 @@ export default class SignupDesign extends Component {
   render() {
     return (
       <div className="color-grey">
-        <Grid container columns={2} centered>
+        <Grid container centered>
           <div className="signup-card">
             <Grid.Column>
-              <Card style={{ width: '29rem', height: '93vh' }}>
-                <div style={{ marginTop: '3rem' }} className="card-container">
-                  <Card.Content style={{ paddingLeft: '3rem', paddingRight: '3rem' }}>
-                    <Image style={{ width: '5rem', height: '5rem' }} src="/images/Reptability123.png"/>
+              <Card style={{ width: '29rem', height: '100%', boxShadow: '1px 1px 11px 1px #d4d4d4' }}>
+                <div style={{ marginTop: '1rem' }} className="card-container">
+                  <Card.Content style={{ paddingLeft: '2.5rem', paddingRight: '2.5rem' }}>
+                    <Responsive minWidth={968}>
+                      <Image style={{ width: '5rem', height: '5rem' }} src="/images/Reptability123.png"/>
+                    </Responsive>
                     <h2>
                       Sign Up
                     </h2>
+                    <div>
+                      <Button.Group style={{ marginBottom: '1rem' }}>
+                        <Button className="btn-choose employer-choose">As an employer</Button>
+                        <Button.Or style={{ display: 'none' }}/>
+                        <Button className="btn-choose worker-choose">As a worker</Button>
+                      </Button.Group>
+                    </div>
                     <Button className="max-width" color='facebook' size="huge">
                       <Icon style={{ color: '#fff' }} name='facebook' /> Continue with Facebook
                     </Button>

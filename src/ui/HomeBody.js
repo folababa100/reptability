@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Button, Image } from 'semantic-ui-react';
+import { Grid, Button, Image, Responsive, Icon } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 
 export default class HomeBody extends Component {
@@ -9,12 +9,12 @@ export default class HomeBody extends Component {
         <div className="home-design">
           <Grid container>
             <Grid.Row columns="2" style={{ marginTop: '4rem' }}>
-              <Grid.Column>
+              <Grid.Column computer="8" tablet="8" mobile="16">
                 <div className="landing-text">
                   <h1 className="landing-color-white">
                     Hire experts workers on Reptability for your project.
-                    The best is guaranteed.
                   </h1>
+                  <h5 style={{ color: '#f9f9f9', fontSize: '1.3rem' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
                 </div>
                 <Grid.Row style={{ marginTop: '3rem' }} columns="2">
                   <Link to="/signup">
@@ -29,8 +29,10 @@ export default class HomeBody extends Component {
                   </Link>
                 </Grid.Row>
               </Grid.Column>
-              <Grid.Column>
-                <Image src="/images/rep.jpg"/>
+              <Grid.Column computer="8" tablet="8">
+                <Responsive minWidth={786}>
+                  <Image src="/images/rep.jpg"/>
+                </Responsive>
               </Grid.Column>
             </Grid.Row>
           </Grid>
@@ -53,8 +55,177 @@ export default class HomeBody extends Component {
                   </Button>
                 </div>
               </Grid.Column>
-              <Grid.Column style={{ marginTop: '5rem' }} width="10">
+              <Grid.Column only="tablet computer" style={{ marginTop: '5rem' }} width="10">
                 <Image src="/images/rep.jpg"/>
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
+        </div>
+        <div className="work-mode-three">
+          <Grid container>
+            <h3 style={{ marginTop: '6rem', textAlign: 'center', width: '100%' }} className="mode-h3">
+              Check the top workers for each categories
+            </h3>
+            <Grid.Row columns="4">
+              <Grid.Column>
+                <div>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                </div>
+              </Grid.Column>
+              <Grid.Column>
+                <div>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                </div>
+              </Grid.Column>
+              <Grid.Column>
+                <div>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                </div>
+              </Grid.Column>
+              <Grid.Column>
+                <div>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                  <Link className="a-man" to="/">
+                    <Icon style={{ textDecoration: 'none' }} name="caret right"/>
+                    Lorem Ipsum
+                  </Link>
+                </div>
               </Grid.Column>
             </Grid.Row>
           </Grid>
